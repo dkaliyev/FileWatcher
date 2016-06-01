@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace FileWatcher
 {
-    public class FileWatcher
+    public class IOFileWatcher
     {
         List<string> _directories;
         List<FileSystemWatcher> _watchers = new List<FileSystemWatcher>();
@@ -16,7 +16,7 @@ namespace FileWatcher
 
         private OnChange OnChangeEnt;
 
-        public FileWatcher(List<string> dirsToWatch, string filter, OnChange onChange)
+        public IOFileWatcher(List<string> dirsToWatch, string filter, OnChange onChange)
         {
             OnChangeEnt = onChange;
 
